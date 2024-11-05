@@ -1,0 +1,467 @@
+
+  .sliderBox{
+    margin-bottom: 5vh;
+  }
+
+
+  .slider{
+    max-width: 100%;
+    height: 80vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 0.8s linear;
+}
+
+.slider .item{
+    height: 80vh ;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider .item .content{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+}
+
+.content.animate{
+    animation: showContent 0.5s 0.7s linear forwards;
+}
+
+.item .content h1{
+    font-size: 70px;
+    font-family: Hidayatullah;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+    z-index: 2;
+}
+
+.item .content span{
+    font-size: 90px;
+    font-family: Hidayatullah;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+    margin-top: -90px;
+}
+
+.item p{
+    color: white;
+    font-size: 15px;
+    font-family: "Poppins";
+    font-weight: 500;
+    width: 400px;
+    margin-top: -30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+}
+
+.item .content a{
+    text-decoration: none;
+    background-color: transparent;
+    border: solid 2px white;
+    color: #f6b616;
+    padding: 3px;
+    width: 135px;
+    height: 45px;
+    display: flex;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+    transition: 0.7s ease-in-out;
+}
+
+.item .content a:hover{
+    scale: 1.05;
+    color: #fff;
+    background-color: #f6b616;
+}
+
+#xadrez{
+    background-image: url(../IMG/xadrez-fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#xadrez span{
+    color: #f6b616;
+}
+
+#diofante{
+    background-image: url(../IMG/diofante-slide.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#diofante span{
+    color: #f98702;
+}
+
+#diofante a{
+    color: #f98702;
+}
+
+#diofante a:hover{
+    scale: 1.05;
+    color: #fff;
+    background-color: #f98702;
+}
+
+#raiz{
+    background-image: url(../IMG/raizQuadrada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#raiz span{
+    color: #f98702;
+}
+
+#raiz a{
+    color: #f98702;
+}
+
+#raiz a:hover{
+    scale: 1.05;
+    color: #fff;
+    background-color: #f98702;
+}
+
+
+#divisoes{
+    background-image: url(../IMG/tresdivisoes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#divisoes span{
+    color: #f6b616;
+}
+
+
+
+#autor{
+    background-image: url(../IMG/autorMalba.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#autor span{
+    color: #f6b616;
+}
+
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.slider .dots li.active{
+    width: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .slider{
+        height: 600px;
+    }
+}
+
+.bookStart{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.bookStart h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Hidayatullah;
+    font-size: 40px;
+    color: #f98702;
+    height: 10%;
+    margin-left: -120px;
+}
+
+.bookStartBox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+}
+
+.bookStartContent{
+    width: 65%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.bookStartImage{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookStartImage img{
+    width: 240px;
+    height: 100%;
+}
+
+.aboutBook{
+    min-height: 88vh;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8vh;
+}
+
+h1 img{
+    width: 120px;
+    transform: rotateZ(110deg);
+}
+
+.aboutBook h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Hidayatullah;
+    font-size: 40px;
+    color: #f98702;
+    height: 10%;
+    margin-left: -120px;
+    margin-bottom: 5vh;
+}
+
+.aboutBook .historyBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+.historyBox .historyContent{
+    width: 65%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.historyBox .historyImage{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.historyBox .bottomImage{
+    display: flex;
+    justify-content: start;
+}
+
+.historyBox .bottomImage img{
+    width: 80%;
+    height: 80%;
+}
+
+.historyImage img{
+    width: 100%;
+    height:100%;
+}
+
+.historyImage .castle{
+    width: 100%;
+    height: 100%;
+}
+
+.bookRelevance{
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.bookRelevance h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Hidayatullah;
+    font-size: 40px;
+    color: #f98702;
+    height: 10%;
+    margin-left: -120px;
+}
+
+.cardArea{
+    min-height: 80vh;
+    background-color: #f98702;
+    width: 100%;
+    margin-bottom: 10vh;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card{
+    background-color: #f98702;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 8vh;
+    padding-top: 8vh;
+   
+}
+
+.card img{
+    margin-bottom: 25px;
+}
+
+.card h1{
+    color: white;
+    margin: 0;
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+.card p{
+    width: 80%;
+    color: #fff;
+}
+
+
+.famousOpinion{
+    display: flex;
+    margin-top: 5vh;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10vh;
+}
+
+.famousOpinion h1{
+    margin: 0;
+}
+
+.famousImage{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.famousImage img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    padding: 4px;
+    border: solid 6px #f98702;
+}
+
+.famousContent{
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,269 @@
+
+
+.startContainer{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(../IMG/raizQuadrada.png);
+    background-size: cover;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+    margin-bottom: 5vh;
+}
+
+.startContainer .content{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 0.7s linear forwards;
+    margin-left: 10%;
+}
+
+.startContainer .content h1{
+    font-size: 60px;
+    font-family: Hidayatullah;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+    z-index: 2;
+}
+
+.startContainer .content span{
+    font-size: 80px;
+    font-family: Hidayatullah;
+    color: #f6b616;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+    margin-top: -90px;
+}
+
+.startContainer .content p{
+    color: white;
+    font-size: 15px;
+    font-family: "Poppins";
+    font-weight: 500;
+    width: 400px;
+    margin-top: -30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+}
+
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.problemContext{
+    height: auto;
+    margin-top: 10vh;
+    width: 80%;
+    margin: auto;
+}
+
+h1 img{
+    width: 120px;
+    transform: rotateZ(110deg);
+}
+
+.problemContext h1{
+    font-size: 40px;
+    color: #f6b616;
+    margin-left: -120px;
+    font-family: Hidayatullah;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contextBox{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contextContent{
+    height: auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.contextImage{
+    height: auto;
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.contextImage img{
+    
+    width: 100%;
+}
+
+.problemExplain{
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.problemExplain h1{
+    font-size: 40px;
+    color: #f6b616;
+    margin-left: -120px;
+    font-family: Hidayatullah;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explainBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.explainImage{
+    height: auto;
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.explainImage img{
+    width: 100%;
+}
+
+.explainContent{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+
+.otherProblems{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15vh;
+
+    & h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Hidayatullah;
+        font-size: 40px;
+        color: #4c0c00;
+        margin-left: -120px;
+    }
+
+    & .boxTop{
+        height: 100%;
+        height: 300px;
+        width: 95%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 5vh;
+    
+        & .card{
+            width: 45%;
+            height: 100%;
+            display: flex;
+            border-radius: 25px;
+            overflow: hidden;
+    
+            & .cardImage{
+                width: 40%;
+                height: 100%;
+            }
+    
+            & .cardContent{
+                height: 100%;
+                width: 60%;
+                position: relative;
+            
+                & h1{
+                    margin: 0;
+                    font-size: 35px;
+                    margin-bottom: 10px;
+                }
+            
+                & p{
+                    text-align: justify;
+                    width: 90%;
+                    margin: auto;
+                }
+
+                & a{
+                    position: absolute;
+                    bottom: 20px;
+                    left: 5%;
+                    margin-top: 20px;
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #000;
+                    text-decoration: none;
+                    background-color: transparent;
+                    border: 2px solid #4c0c00;
+                    color: #4c0c00;
+                    transition: 0.5s;
+                }
+
+                & a:hover{
+                    background-color: #4c0c00;
+                    border: 2px solid white;
+                    color: #fff;
+                    scale: 1.03;
+                    
+                }
+            }
+        }
+    }
+}
+
+#boxBottom{
+    margin-top: 10vh;
+}
+
+#card1 .cardImage{
+    background-image: url(../IMG/xadrez-fundo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#card2 .cardImage{
+    background-image: url(../IMG/tresdivisoes.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#card3 .cardImage{
+    background-image: url(../IMG/diofante-slide.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#card4 .cardImage{
+    background-image: url(../IMG/autorMalba.png);
+    background-position: center;
+    background-size: cover;
+}

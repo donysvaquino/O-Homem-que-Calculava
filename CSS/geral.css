@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 350
+}
+
+body{
+    overflow-x: hidden
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family:Salam ;
+    src: url(../FONTS/Salam\ Ramadhan.ttf);
+}
+
+@font-face {
+    font-family:Ketupat;
+    src: url(../FONTS/Ketupat\ Ramadhan.ttf);
+}
+
+@font-face {
+    font-family:Welcome;
+    src: url(../FONTS/Welcome\ Ramadhan.ttf);
+}
+
+@font-face {
+    font-family:Shayan;
+    src: url(../FONTS/Shayan\ Free\ Trial.ttf);
+}
+
+@font-face {
+    font-family:Miracle;
+    src: url(../FONTS/Miracle\ Ramadhan.otf);
+}
+
+@font-face {
+    font-family:Marhaban;
+    src: url(../FONTS/Marhaban\ Ramadhan\ DEMO.otf);
+}
+
+@font-face {
+    font-family:Hidayatullah;
+    src: url(../FONTS/hidayatullah\ DEMO.ttf);
+}
+
+.navMobile{
+    height: 91vh;
+    width: 70vw;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    top: 9vh;
+    z-index: 200000;
+    background-color: #4c0c00;
+    display: flex;
+    align-items: start;
+    right: 0;
+    transition: 0.5s ease-in-out;
+    display: none;
+}
+
+.none{
+    transform: translateX(70vw);
+}
+
+.navMobile a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: Hidayatullah;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid white;
+    background-color: #4c0c00;
+
+    & img{
+        width: 22px;
+        height: 22px;
+        margin-right: 15px;
+        margin-left: 30px;
+    }
+}
+
+.menuHamburguer{
+    padding: 2px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    margin-left: 10px;
+}
+
+.lineBurger{
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s linear;
+}
+
+.x1{
+    transform: rotatez(-45deg);
+    margin-bottom: -19px;
+}
+
+.x2{
+    opacity: 0;
+}
+
+.x3{
+    transform: rotatez(45deg);
+    margin-top: -20px;
+}
+
+nav{
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #4c0c00;
+    color: white;
+    position: fixed;
+    z-index: 10;
+    z-index: 3000;
+}
+
+nav img{
+    margin-left: 15px;
+    height: 6vh;
+}
+
+.navBox{
+    display: flex;
+    margin-right: 10px;
+    
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    padding: 2px;
+    margin-right: 25px;
+}
+
+.links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    font-family: Hidayatullah;
+    font-size: 17px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.link:hover .line{
+    width: 100%;
+}
+
+.links a .line{
+    background-color: #f6b616;
+    height: 2px;
+    width: 0%;
+    margin-top: -7px;
+    transition: 0.5s ease-in-out;
+}
+
+
+.translateArea{
+    width: 80px;
+    height: 40px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0.5px 0.5px 17px -6.5px #0f0f0f;
+}   
+
+.activeEng{
+    transform: translateX(99%);
+}
+
+.translateBall{
+    width: 38px;
+    height: 37px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 1s ease;
+    transition:background 0.3s ease-out;
+}
+
+.braFlag{
+    background-image: url(../IMG/bra-flag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s ease;
+}
+
+.euaFlag{
+    background-image: url(../IMG/usa-flag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s ease;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #4c0c00;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 4px solid #4c0c00;  /* creates padding around scroll thumb */
+  }
+
+  
+
+.back-start a{
+    width: 100%;
+    height: 7vh;
+    background-color: #ff7519;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+    
+  footer{
+      height: 630px;
+      width: 100%;
+      background-image: url(../IMG/footerhq.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+  }
+  
+  footer .top{
+      width: 75vw;
+      height: 50%;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      border-bottom: 1px solid #ffffff6a;
+      justify-content: center;
+      color: white;
+      
+  }
+  
+  footer .top h1{
+      font-size: 44px;
+      font-family: Hidayatullah;
+  }
+  
+  footer .top p{
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  footer .top img{
+      width: 30px;
+      height: 30px;
+  }
+  
+  footer .top section{
+      width:200px;
+      display: flex;
+      justify-content: space-around;
+      border-radius: 100%;
+      margin-top: 25px;
+  }
+  
+  footer .mid{
+      width: 75vw;
+      height: 40%;
+      border-bottom: 1px solid #ffffff6a;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  
+  footer .mid .area{
+      height: 90%;
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      justify-content: center;
+  }
+  
+  footer .mid .area h1{
+      font-size: 22px;
+      margin-bottom: 5px;
+      font-weight: 600;
+  }
+  
+  footer .mid .area a{
+      color: #fff;
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 15px;
+      margin-bottom: 5px;
+  }
+  
+  footer .mid div:not(:last-child){
+      border-right: 1px #ffffff6a solid;
+  }
+  
+  
+  footer .image{
+      height: 90%;
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  footer .image img{
+      width:210px;
+  }
+  
+  footer .bottom{
+      width: 75vw;
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 15px;
+      font-weight: 300;
+  }
+  
+  .ghost-nav{
+      width: 100%;
+      height: 9vh;
+  }

@@ -1,0 +1,56 @@
+
+@keyframes appear{
+    from{
+        transform: translateY(20vh);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        filter: blur(80);
+        opacity: 1;
+    }
+    }
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.explainImage,
+.explainContent,
+.card,
+ .malbaBioContent,
+ .imageBioMalba,
+ .julioContent,
+ .julioImage,
+ .julioBio,
+ .dev,
+ .bookStart,
+ .historyBox,
+ .famousOpinion{
+    animation: appear 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% 40%;
+}
+
+.problemContext, .malbaStart, .side-a, .side-b{
+    animation: appear 0.8s ease-in-out forwards;
+}
+
+
+h1 img{
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+
+

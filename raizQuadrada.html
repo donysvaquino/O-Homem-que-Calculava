@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/raiz.css">
+    <link rel="stylesheet" href="CSS/geral.css">
+    <link rel="stylesheet" href="CSS/problemas-responsive.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    
+    <title>A Raiz Quadrada</title>
+
+    <link rel="shortcut icon" href="IMG/logo-kitab.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="livro.html"><img src="IMG/logokitbm.png" alt=""></a></div>
+        <div class="navBox">
+            <div class="links">
+                <a href="livro.html" class="link">Home
+                    <div class="line"></div>
+                </a>
+                <a href="sobreNos.html" class="link">Sobre nós
+                    <div class="line"></div>
+                </a>
+                <a href="contato.html" class="link">Contato
+                    <div class="line"></div>
+                </a>
+                <a href="login.html" class="link">Cadastre-se
+                    <div class="line"></div>
+                </a>
+            </div>
+
+            <figure class="translateArea" id="translateArea">
+                <a href="livroEng.html"><figcaption class="translateBall braFlag" id="translateBall" onclick="translateEng()"></figcaption></a>
+            </figure>
+
+            <div class="menuHamburguer" id="activeMobile" onclick="ativarMenu()">
+                <div class="lineBurger " id="line1"></div>
+                <div class="lineBurger " id="line2"></div>
+                <div class="lineBurger " id="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navMobile none" id="navMobile">
+        <a href="livro.html" class="link"> <img src="IMG/casa.png" alt=""> Home</a>
+        <a href="sobreNos.html" class="link"> <img src="IMG/informacoes.png" alt=""> Sobre nós</a>
+        <a href="contato.html" class="link"> <img src="IMG/fone-de-ouvido.png" alt=""> Contato</a>
+        <a href="login.html" class="link"> <img src="IMG/login-alt.png" alt=""> Cadastre-se</a>
+    </div>
+
+    <main>
+        <div class="ghost-nav" id="ghost-nav"></div>
+
+        <section class="startContainer">
+            <figure class="content">
+                <h1>A Raíz</h1>
+                <span>Quadrada</span>
+                <p>Como Beremiz Samir venceu um dos sábios dando uma esperta e brilhante resposta sobre um problema matemático envolvendo a raíz quadrada de 2025.</p>
+                </figure>
+        </section>
+        <section class="problemContext">
+            <h1><img src="IMG/ornamento-autor.png" alt="">Contexto do problema</h1>
+            <div class="contextBox">
+                <div class="contextContent"><p>Enquanto passava por seu julgamento, Beremiz foi interrogado por alguns sábios. O terceiro sábio que deveria interrogar Beremiz era o célebre astrônomo Abul-Hassã Ali de Alcalá, vindo de Bagdá a convite do califa Al-Motacém.  O sábio questiona Beremiz: "É possível, em Matemática, tirar-se uma regra falsa de uma propriedade verdadeira?". Beremiz então responde o sábio com o seguinte pensamento: <br> <br> "Admitamos que um algebrista curioso desejasse determinar a raiz quadrada de um número de quatro algarismos. Sabemos que a raiz quadrada de um número é outro número que, multiplicado por si mesmo, dá um produto igual ao número dado. Vamos supor, ainda, que o algebrista, tomando, livremente, três números a seu gosto, destacasse os seguintes números: 2.025, 3.025 e 9.801".</p></div>
+                <div class="contextImage"><img src="IMG/cachimbo.png" alt=""></div>
+            </div>
+        </section>
+        <section class="problemExplain">
+            <h1><img src="IMG/ornamento-autor.png" alt="">Resolução</h1>
+            <div class="explainBox">
+                <div class="explainImage"><img src="IMG/2025.png" alt=""></div>
+                <div class="explainContent">
+                    Sabemos que a raiz quadrada de um número é outro número multiplicado por si mesmo.
+                    Calculando a raiz quadrada de 2025, teríamos 45, ou seja, 45x45 é igual a 2025. É possível observar que 45 é a soma de 20+25, que são as partes do número 2025 quando se coloca um ponto entre 20 e 25= 20.25.<br><br>
+                    Assim, podemos concluir que para saber a raiz quadrada de um número de 4 algarismos, é preciso dividir o número em duas classes por meio de um ponto, e depois somá-las, obtendo a raiz quadrada do número.</div>
+            </div>
+        </section>
+
+        <section class="otherProblems">
+            <h1><img src="IMG/ornamento-1.png" alt="ornamento laranja">Veja também:</h1>
+                <div class="boxTop">
+                    <div class="card" id="card1">
+                        <div class="cardImage"></div>
+                        <div class="cardContent">
+                            <h1>Xadrez</h1>
+                            <p>A genial resolução de Beremiz Samir para um problema que envolve a história do jogo de xadrez e a sua relação com a matemática.</p>
+                            <a href="xadrez.html">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card2">
+                        <div class="cardImage"></div>
+                        <div class="cardContent">
+                            <h1>Três Divisões</h1>
+                            <p>O curioso e genial cálculo realizado por Beremiz Samir para a justa divisão de um pagamento entre ele e seu parceiro.</p>
+                            <a href="tresDivisoes.html">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="boxTop" id="boxBottom">
+                    <div class="card" id="card3">
+                        <div class="cardImage"></div>
+                        <div class="cardContent">
+                            <h1>Diofante</h1>
+                            <p>A genial resolução de Beremiz Samir para um problema que envolve o sofrimento de Diofante em seu restante de vida e a sua relação com a matemática.</p>
+                            <a href="diofante.html">Saiba mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card4">
+                        <div class="cardImage"></div>
+                        <div class="cardContent">
+                            <h1>Malba Tahan</h1>
+                            <p>Conheça Malba Tahan, professor, educador, pedagogo, conferencista, matemático e escritor do modernismo brasileiro, o escritor de "O Homem que Calculava".</p>
+                            <a href="autor.html">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <div class="back-start"><a href="#ghost-nav">Voltar ao topo</a></div>
+
+    <footer>
+        
+        <figure class="top">
+            <h1>Gostou da nossa página?</h1>
+            <p>Nos acompanhe também em nossas redes sociais: </p>
+            <section>
+                <a href="https://www.instagram.com/livkitab/profilecard/?igsh=NzBhYjB6ejRpOWJ1"><img src="IMG/instagram.png" alt=""></a>
+            <img src="IMG/facebook.png" alt="">
+            <img src="IMG/youtube.png" alt="">
+        </section>
+        </figure>
+        <figure class="mid">
+            <div class="image"> <a href="livro.html"><img src="IMG/logokitbm.png" alt=""></a></div>
+            <div class="area"> <h1>O Homem que Calculava</h1>
+                <a href="livro.html">Sobre o livro</a>
+                <a href="Autor.html">Autor</a>
+                <a href="xadrez.html">O Problema do Xadrez</a>
+                <a href="diofante.html">O Problema de Diofante</a>
+                <a href="raizQuadrada.html">A raiz quadrada de 2025</a>
+                <a href="tresDivisoes.html">As três Divisões</a>
+            </div>
+            <div class="area">
+                <h1>Livraria Kitab</h1>
+                <a href="sobreNos.html">Sobre nós</a>
+                <a href="contato.html">Contato</a>
+                <a href="login.html">Cadastre-se</a>
+            </div>
+        </figure>
+        <figure class="bottom"><p>©2024 Livraria Kitab Todos os direitos reservados</p></figure>
+    </footer>
+
+
+</body>
+<script src="JS/menu.js"></script>
+</html>

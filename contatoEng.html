@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/feedback.css">
+    <link rel="stylesheet" href="CSS/geral.css">
+
+    <title>Contact</title>
+
+    <link rel="shortcut icon" href="IMG/logo-kitab.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/f4abea6276.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="livroEng.html"><img src="IMG/logokitbm.png" alt=""></a></div>
+        <div class="navBox">
+            <div class="links">
+                <a href="livroEng.html" class="link">Home
+                    <div class="line"></div>
+                </a>
+                <a href="sobreNosEng.html" class="link">About us
+                    <div class="line"></div>
+                </a>
+                <a href="contatoEng.html" class="link">Contact
+                    <div class="line"></div>
+                </a>
+                <a href="loginEng.html" class="link">Register
+                    <div class="line"></div>
+                </a>
+            </div>
+
+            <a href="contato.html"> <figure class="translateArea" style="justify-content: end;" id="translateArea">
+                <figcaption class="translateBall braFlag" style="background-image: url(IMG/usa-flag.png);" id="translateBall" onclick="translateEng()"></figcaption>
+            </figure> </a>
+            
+
+            <div class="menuHamburguer" id="activeMobile" onclick="ativarMenu()">
+                <div class="lineBurger " id="line1"></div>
+                <div class="lineBurger " id="line2"></div>
+                <div class="lineBurger " id="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navMobile none" id="navMobile">
+        <a href="livroEng.html" class="link"> <img src="IMG/casa.png" alt=""> Home</a>
+        <a href="sobreNosEng.html" class="link"> <img src="IMG/informacoes.png" alt=""> About us</a>
+        <a href="contatoEng.html" class="link"> <img src="IMG/fone-de-ouvido.png" alt=""> Contact</a>
+        <a href="loginEng.html" class="link"> <img src="IMG/login-alt.png" alt=""> Register</a>
+    </div>
+
+    <main>
+        <div class="ghost-nav" id="ghost-nav"></div>
+
+        <div class="container">
+            <div class="forms-container">
+              <div class="signin-signup">
+                <form action="livroEng.html" class="sign-in-form">
+                  <h2 class="title">Contact</h2>
+                 
+                  <figure class="input-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </figure>
+
+                <figure class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </figure>
+
+                <figure class="input-field" id="msg">
+                    <i class="fa-solid fa-inbox"></i>
+                    <textarea id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+                </figure>
+
+                <h2>Leave your feedback!</h2>
+                    <p>Your opinion is important to us!</p>
+                    <figure class="starsArea">
+    
+                        <img src="IMG/starWhite.png" alt="" id="star1" onclick="nota1()" onmouseenter="sobe1()" onmouseleave="desce1()">
+    
+                        <img src="IMG/starWhite.png" alt="" id="star2" onclick="nota2()" onmouseenter="sobe2()" onmouseleave="desce2()">
+    
+                        <img src="IMG/starWhite.png" alt="" id="star3" onclick="nota3()" onmouseenter="sobe3()" onmouseleave="desce3()">
+    
+                        <img src="IMG/starWhite.png" alt="" id="star4" onclick="nota4()" onmouseenter="sobe4()" onmouseleave="desce4()">
+    
+                        <img src="IMG/starWhite.png" alt="" id="star5" onclick="nota5()" onmouseenter="sobe5()" onmouseleave="desce5()">
+    
+                    </figure>
+
+                <input type="submit" class="btn" value="Submit">
+
+                </form>
+
+              </div>
+            </div>
+      
+            <div class="panels-container">
+              <div class="panel left-panel">
+                <div class="content">
+                  <h3>Want to talk to us?</h3>
+                  <p>
+                    Send us a message so we can help you :)
+                  </p>
+                </div>
+                <img src="img/Through the desert-rafiki (1).svg" class="image" alt="">
+              </div>
+
+            </div>
+          </div>
+        
+
+       
+    </main>
+</body>
+<script src="JS/feedback.js"></script>
+<script src="JS/menu.js"></script>
+</html>

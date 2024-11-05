@@ -1,0 +1,556 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Marhey:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Marhey:wght@300..700&family=Reem+Kufi:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+    font-family:Salam ;
+    src: url(../FONTS/Salam\ Ramadhan.ttf);
+}
+
+@font-face {
+    font-family:Ketupat;
+    src: url(../FONTS/Ketupat\ Ramadhan.ttf);
+}
+
+@font-face {
+    font-family:Welcome;
+    src: url(../FONTS/Welcome\ Ramadhan.ttf);
+}
+
+@font-face {
+    font-family:Shayan;
+    src: url(../FONTS/Shayan\ Free\ Trial.ttf);
+}
+
+@font-face {
+    font-family:Miracle;
+    src: url(../FONTS/Miracle\ Ramadhan.otf);
+}
+
+@font-face {
+    font-family:Marhaban;
+    src: url(../FONTS/Marhaban\ Ramadhan\ DEMO.otf);
+}
+
+@font-face {
+    font-family:Hidayatullah;
+    src: url(../FONTS/hidayatullah\ DEMO.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+
+.navMobile{
+    height: 88vh;
+    width: 50vw;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    top: 12vh;
+    z-index: 200;
+    background-color: #451000;
+    display: flex;
+    justify-content: space-around;
+    right: 0;
+    transition: 0.5s ease-in-out;
+    display: none;
+}
+
+.none{
+    transform: translateX(50vw);
+}
+
+.navMobile a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: Hidayatullah;
+    font-size: 17px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.menuHamburguer{
+    padding: 2px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    margin-left: 10px;
+}
+
+.lineBurger{
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s linear;
+}
+
+.x1{
+    transform: rotatez(-45deg);
+    margin-bottom: -19px;
+}
+
+.x2{
+    opacity: 0;
+}
+
+.x3{
+    transform: rotatez(45deg);
+    margin-top: -20px;
+}
+
+
+nav{
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #451000;
+    color: white;
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+}
+
+nav img{
+    margin-left: 15px;
+    height: 6vh;
+}
+
+.navBox{
+    display: flex;
+    margin-right: 10px;
+    
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    padding: 2px;
+    margin-right: 25px;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-family: Hidayatullah;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.link:hover .line{
+    width: 100%;
+}
+
+.links a .line{
+    background-color: #f6b616;
+    height: 2px;
+    width: 0%;
+    margin-top: -7px;
+    transition: 0.5s ease-in-out;
+}
+
+
+.translateArea{
+    width: 80px;
+    height: 40px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0.5px 0.5px 17px -6.5px #0f0f0f;
+}   
+
+.activeEng{
+    transform: translateX(99%);
+}
+
+.translateBall{
+    width: 38px;
+    height: 37px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 1s ease;
+    transition:background 0.3s ease-out;
+}
+
+.braFlag{
+    background-image: url(../IMG/bra-flag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s ease;
+}
+
+.euaFlag{
+    background-image: url(../IMG/usa-flag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s ease;
+}
+
+
+.ghost-nav{
+    height: 9vh;
+    width: 100%;
+}
+
+main{
+   min-height: 92vh;
+}
+
+.about-book{
+    width: 100%;
+    height: auto;
+    background-color: #910a05;
+    background-image: url(../IMG/deserto-tarde.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-a{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.side-a h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-family: Hidayatullah;
+}
+
+.side-a p{
+    width: 65%;
+    font-size: 23px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.side-b{
+    position: relative;
+    width: 100%;
+    height: 140vh;
+}
+
+.none{
+    display: none;
+}
+
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 430px;
+    height: 620px;
+    background: #fff;
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translate(-50%, -50%) perspective(2000px);
+    box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+}
+
+.card:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 1px;
+    width: 100%;
+    height: 5px;
+    background: #575757 ;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+}
+
+.card:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: #969595;
+    transform-origin: left;
+    transform: skewY(-45deg);
+}
+
+.card .imgbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    transition: 1s;
+}
+
+.card:hover .imgbox{
+    transform: rotateY(-135deg);
+}
+
+.card .detalhes{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: -1;
+    background-color: white;
+    color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detalhes h2{
+    text-align: center;
+    font-family: Hidayatullah;
+    font-size: 30px;
+}
+
+.detalhes p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.detalhes a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10%;
+    background-color: #ff7519;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-family: Hidayatullah;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.pulo{
+    animation: bounce 2s ease infinite;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: -10vh;
+} 
+
+@keyframes bounce{
+    0%, 25%, 55%, 75%, 100%{
+        transform: translateY(0);
+    }
+    45%{
+        transform: translateY(-20px);
+    }
+    65%{
+        transform: translateY(-10px);
+    }
+    85%{
+        transform: translateY(-5px);
+    }
+}
+
+
+
+.back-start a{
+    width: 100%;
+    height: 7vh;
+    background-color: #ff7519;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+  
+footer{
+    height: 630px;
+    width: 100%;
+    background-image: url(../IMG/footerhq.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer .top{
+    width: 75vw;
+    height: 50%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    border-bottom: 1px solid #ffffff6a;
+    justify-content: center;
+    color: white;
+    
+}
+
+footer .top h1{
+    font-size: 44px;
+    font-family: Hidayatullah;
+}
+
+footer .top p{
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 250;
+}
+
+footer .top img{
+    width: 30px;
+    height: 30px;
+}
+
+footer .top section{
+    width:200px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 100%;
+    margin-top: 25px;
+}
+
+footer .mid{
+    width: 75vw;
+    height: 40%;
+    border-bottom: 1px solid #ffffff6a;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .mid .area{
+    height: 90%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+footer .mid .area h1{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+footer .mid .area a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 250;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+footer .mid div:not(:last-child){
+    border-right: 1px #ffffff6a solid;
+}
+
+
+footer .image{
+    height: 90%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .image img{
+    width:210px;
+}
+
+footer .bottom{
+    width: 75vw;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 50;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #451000;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 4px solid #451000;  /* creates padding around scroll thumb */
+  }
+
+ 

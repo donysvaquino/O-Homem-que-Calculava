@@ -1,0 +1,486 @@
+
+
+@media (max-width:768px){
+
+    .links{
+        display: none;
+    }    
+
+    .menuHamburguer{
+        display: flex;
+        margin-right: 10px;
+    }    
+
+    .navMobile{
+        display: flex;
+    }    
+
+.startContainer .content{
+        & h1{
+            font-size: 40px;
+        }    
+
+        & span{
+            font-size: 50px;
+            margin-top: -50px;
+        }    
+
+        & p{
+            width: 270px;
+            font-size: 12px;
+            margin-top: -15px;
+        }    
+    }    
+
+.problemContext{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+    
+    & .contextBox{
+        flex-direction: column; 
+        align-items: center;
+
+        & .contextContent{
+            width: 100%;
+    
+            & p{
+                width: 100%;
+            }    
+        }    
+
+        & .contextImage{
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 5vh;
+            margin-top: 5vh;
+
+            & img{
+                width: 300px;
+               
+            }
+        }    
+
+
+    }    
+    
+    & h1{
+        font-size: 30px;
+        margin-left: -20px;
+
+        & img{
+            width: 60px;
+        }    
+    }    
+
+}    
+
+.problemExplain{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 10vh;
+
+    & .explainBox{
+        flex-direction: column-reverse; 
+        align-items: center;
+
+        & .explainContent{
+            width: 100%;
+    
+            & p{
+                width: 100%;
+            }    
+        }    
+
+        & .explainImage{
+            width: 100%;
+            margin-top: 5vh;
+            justify-content: center;
+
+            & img{
+                width: 300px;
+            }
+        }    
+    }    
+    
+    & h1{
+        font-size: 35px;
+        margin-left: -20px;
+
+        & img{
+            width: 80px;
+        }    
+    }    
+}    
+
+.otherProblems{
+
+    & h1{
+        font-size: 40px;
+        margin-left: -20px;
+
+        & img{
+            width: 80px;
+        }    
+    }    
+
+    & .boxTop{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+
+        & .card{
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5vh;
+            
+
+            & .cardImage{
+                width: 100%;
+                height: 200px;
+                margin-bottom: 20px;
+            }    
+
+            & .cardContent{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                & p{
+                    margin-top: 0;
+                }    
+                
+
+                & a{
+                    position: static;
+                    margin-top: 30px;
+                }    
+            }    
+        }    
+    }    
+}    
+
+footer{
+    text-align: center;
+    height: auto;
+
+    & .top{
+        width: 100%;
+        border: 0;
+        margin-top: 20px;
+
+        & h1{
+            font-size: 30px;
+        }
+
+        & p, section{
+            margin-top: 20px;
+        }
+    }
+
+    & .mid{
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+        margin-top: 10vh;
+        border: none;
+
+        & .image{
+            width: 100%;
+        }
+
+        & .area{
+            border-right: none;
+            width: 100%;
+        }
+
+        & div:not(:last-child){
+            margin-bottom: 50px;
+            border: none;
+        }
+    }
+
+    & .bottom{
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+}
+
+
+
+@media (min-width:769px) and (max-width:1024px){
+
+    .links{
+        display: none;
+    }    
+
+    .menuHamburguer{
+        display: flex;
+        margin-right: 10px;
+    }    
+
+    .navMobile{
+        display: flex;
+    }    
+
+.startContainer .content{
+        & h1{
+            font-size: 50px;
+        }    
+
+        & span{
+            font-size: 60px;
+            margin-top: -50px;
+        }    
+
+        & p{
+            width: 270px;
+            font-size: 12px;
+            margin-top: -15px;
+        }    
+    }    
+
+.problemContext{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+    
+    & .contextBox{
+        flex-direction: column; 
+        align-items: center;
+
+        & .contextContent{
+            width: 100%;
+    
+            & p{
+                width: 100%;
+            }    
+        }    
+
+        & .contextImage{
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 5vh;
+            margin-top: 5vh;
+
+            & img{
+                width: 400px;
+                height: 400px;
+            }
+        }    
+    }    
+    
+    & h1{
+        font-size: 40px;
+        margin-left: -120px;
+
+        & img{
+            width: 120px;
+        }    
+    }    
+
+}    
+
+.problemExplain{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 10vh;
+
+    & .explainBox{
+        flex-direction: column-reverse; 
+        align-items: center;
+
+        & .explainContent{
+            width: 100%;
+    
+            & p{
+                width: 100%;
+            }    
+        }    
+
+        & .explainImage{
+            width: 100%;
+            margin-top: 5vh;
+            justify-content: center;
+
+            & img{
+            width: 400px;
+            height: 400px;
+        }    
+    }    
+    
+    & h1{
+        font-size: 40px;
+        margin-left: -120px;
+
+        & img{
+            width: 120px;
+        }    
+    }    
+}    
+
+}
+
+
+.otherProblems{
+
+    & h1{
+        font-size: 40px;
+        margin-left: -20px;
+
+        & img{
+            width: 80px;
+        }    
+    }    
+
+    & .boxTop{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+
+        & .card{
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5vh;
+
+            & .cardImage{
+                width: 100%;
+                height: 200px;
+                margin-bottom: 20px;
+            }    
+
+            & .cardContent{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                & p{
+                    margin-top: 0;
+                }    
+                
+
+                & a{
+                    position: static;
+                    margin-top: 30px;
+                }    
+            }    
+        }    
+    }    
+}    
+}
+
+
+@media (min-width:1025px){
+
+    
+    .problemContext{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+        
+        & .contextBox{
+            align-items: center;
+    
+            & .contextContent{
+                
+        
+                & p{
+                    width: 100%;
+                }    
+            }    
+    
+            & .contextImage{
+                width: 25%;
+                justify-content: center;
+                margin-bottom: 5vh;
+            }    
+        }    
+        
+        & h1{
+            font-size: 40px;
+            margin-left: -120px;
+    
+            & img{
+                width: 120px;
+            }    
+        }    
+    
+    }    
+    
+    
+        
+    .otherProblems{
+    
+        & h1{
+            font-size: 40px;
+            margin-left: -120px;
+    
+            & img{
+                width: 120px;
+            }    
+        }    
+    
+        & .boxTop{
+            display: flex;
+            height: auto;
+            align-items: center;
+    
+            & .card{
+                width: 45%;
+                height: 420px;
+    
+                & .cardImage{
+                    width: 100%;
+                    height: auto;
+                }    
+    
+                & .cardContent{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                   
+    
+                    & p{
+                        margin-top: 0;
+                    }    
+                    
+    
+                    & a{
+                        position: static;
+                        margin-left: 15px;
+                    }    
+                }    
+            }    
+        }    
+    }    
+    
+    
+    }
+    
+@media (Min-width: 1600px){
+    *{
+        font-size: 21px;
+    }
+}

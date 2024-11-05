@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/diofante.css">
+    <link rel="stylesheet" href="CSS/geral.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/problemas-responsive2.css">
+
+    <title>The life of Diophantus </title>
+
+    <link rel="shortcut icon" href="IMG/logo-kitab.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="livroEng.html"><img src="IMG/logokitbm.png" alt=""></a></div>
+        <div class="navBox">
+            <div class="links">
+                <a href="livroEng.html" class="link">Home
+                    <div class="line"></div>
+                </a>
+                <a href="sobreNosEng.html" class="link">About us
+                    <div class="line"></div>
+                </a>
+                <a href="contatoEng.html" class="link">Contact
+                    <div class="line"></div>
+                </a>
+                <a href="loginEng.html" class="link">Register
+                    <div class="line"></div>
+                </a>
+            </div>
+
+            <figure class="translateArea" id="translateArea" style="justify-content: end;">
+                <a href="diofante.html"><figcaption class="translateBall braFlag" id="translateBall" onclick="translateEng()" style="background-image: url(IMG/usa-flag.png);"></figcaption></a>
+            </figure>
+
+            <div class="menuHamburguer" id="activeMobile" onclick="ativarMenu()">
+                <div class="lineBurger " id="line1"></div>
+                <div class="lineBurger " id="line2"></div>
+                <div class="lineBurger " id="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navMobile none" id="navMobile">
+        <a href="livroEng.html" class="link"> <img src="IMG/casa.png" alt=""> Home</a>
+        <a href="sobreNosEng.html" class="link"> <img src="IMG/informacoes.png" alt=""> About us</a>
+        <a href="contatoEng.html" class="link"> <img src="IMG/fone-de-ouvido.png" alt=""> Contact</a>
+        <a href="loginEng.html" class="link"> <img src="IMG/login-alt.png" alt=""> Register</a>
+    </div>
+
+    <main>
+        <div class="ghost-nav" id="ghost-nav"></div>
+
+        <section class="startContainer">
+            <figure class="content">
+                <h1>The life of</h1>
+                <span>Diophantus</span>
+                <p>Beremiz Samir's brilliant resolution to a problem that involves Diophantus' suffering throughout the rest of his life and his relationship with mathematics.</p>
+                </figure>
+        </section>
+        <section class="problemContext">
+            <h1><img src="IMG/ornamento-laranja.png" alt="">Context of the problem</h1>
+            <div class="contextBox">
+                <div class="contextImage"><img src="IMG/diofanteRosto.png" alt=""></div>
+                <div class="contextContent"><p>God granted Diophantus to spend the sixth part of his life in youth; a twelfth, in adolescence; a seventh then was drained into a sterile marriage. Five more years passed, after which a son was born. But this son—wretched and yet beloved! — he had barely reached half his father's age, he died. Diophantus spent another four years, mitigating his own pain with the study of the science of numbers, before reaching the end of his existence. It is possible that Diophantus, concerned with solving the indeterminate problems of Arithmetic, had not considered obtaining the perfect solution to King Hieron's problem, which is not indicated in his work.</p></div>
+            </div>
+        </section>
+        <section class="problemExplain">
+            <h1><img src="IMG/ornamento-laranja.png" alt="">Resolution</h1>
+            <div class="explainBox">
+                <div class="explainContent">
+                    The Diophantus Problem or Epitaph of Diophantus can be solved with the help of a 1st degree equation with one unknown.
+<br>
+<br>
+x = Diophantus' age at death
+<br>
+x/6 = Childhood
+<br>
+x/12 = Adolescence
+<br>
+x/7 = Sterile marriage
+<br>
+5 years later his son was born
+<br>
+x/2 = Lifespan of your child
+<br>
+4 years Diophantus suffered before his death
+<br>
+  
+x = x/6 + x/12 + x/7 + 5 + x/2 + 4 (first degree equation)
+<br>
+x - x/6 - x/12 - x/7 - x/2 = 9
+<br>
+9x = 756
+<br>
+x = 756/9 = 84  
+<br>
+<br>
+Riddle answer: 84 years old</div>
+                    <div class="explainImage"><img src="IMG/skulllar.png" alt=""></div>
+                </div>
+        </section>
+
+        <section class="otherProblems">
+            <h1><img src="IMG/ornamento-1.png" alt="ornamento laranja">See also:</h1>
+                <div class="boxTop">
+                    <div class="card" id="card1">
+                        <div class="cardImage"></div>
+                        <div class="cardContent">
+                            <h1>Chess</h1>
+                            <p>Beremiz Samir's brilliant resolution to a problem that involves the history of the game of chess and its relationship with mathematics.</p>
+                            <a href="xadrezEng.html">See more</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card2">
+                        <div class="cardImage"></div>
+                        <div class="cardContent">
+                            <h1>Three Divisions</h1>
+                            <p>The curious and ingenious calculation carried out by Beremiz Samir for the fair division of a payment between him and his partner.</p>
+                            <a href="tresDivisoesEng.html">See more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="boxTop" id="boxBottom">
+                    <div class="card" id="card3">
+                        <div class="cardImage"></div>
+                        <div class="cardContent">
+                            <h1>Square Root</h1>
+                            <p>How Beremiz Samir beat one of the wise men by giving a clever and brilliant answer to a mathematical problem involving the number 2025.</p>
+                            <a href="raizQuadradaEng.html">See more</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card4">
+                        <div class="cardImage"></div>
+                        <div class="cardContent">
+                            <h1>Malba Tahan</h1>
+                            <p>Meet Malba Tahan, professor, educator, pedagogue, lecturer, mathematician and writer of Brazilian modernism, the writer of "The Man Who Calculated".</p>
+                            <a href="autorEng.html">See more</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <div class="back-start"><a href="#ghost-nav">Back to top</a></div>
+
+    <footer>
+        
+        <figure class="top">
+            <h1>Did you like our page?</h1>
+            <p>Also follow us on our social networks:</p>
+            <section>
+                <a href="https://www.instagram.com/livkitab/profilecard/?igsh=NzBhYjB6ejRpOWJ1"><img src="IMG/instagram.png" alt=""></a>
+            <img src="IMG/facebook.png" alt="">
+            <img src="IMG/youtube.png" alt="">
+        </section>
+        </figure>
+        <figure class="mid">
+            <div class="image"> <a href="livroEng.html"><img src="IMG/logokitbm.png" alt=""></a></div>
+            <div class="area"> <h1>The Man Who Calculated</h1>
+                <a href="livroEng.html">About book </a>
+                <a href="autorEng.html">Author</a>
+                <a href="xadrezEng.html">The Chess Problem</a>
+                <a href="diofanteEng.html">The Diophantus Problem</a>
+                <a href="raizQuadradaEng.html">The square root of 2025</a>
+                <a href="tresDivisoesEng.html">The three Divisions</a>
+            </div>
+            <div class="area">
+                <h1>Livraria Kitab</h1>
+                <a href="sobreNosEng.html">About us</a>
+                <a href="contatoEng.html">Contact</a>
+                <a href="loginEng.html">Register</a>
+            </div>
+        </figure>
+        <figure class="bottom"><p>©2024 Livraria Kitab All rights reserved</p></figure>
+    </footer>
+
+
+</body>
+<script src="JS/menu.js"></script>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/livro.css">
+    <link rel="stylesheet" href="CSS/geral.css">
+    <link rel="stylesheet" href="CSS/home-responsivo.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <title>The man who calculed</title>
+
+    <link rel="shortcut icon" href="IMG/logo-kitab.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="livroEng.html"><img src="IMG/logokitbm.png" alt=""></a></div>
+        <div class="navBox">
+            <div class="links">
+                <a href="livroEng.html" class="link">Home
+                    <div class="line"></div>
+                </a>
+                <a href="sobreNosEng.html" class="link">About us
+                    <div class="line"></div>
+                </a>
+                <a href="contatoEng.html" class="link">Contact
+                    <div class="line"></div>
+                </a>
+                <a href="loginEng.html" class="link">Register
+                    <div class="line"></div>
+                </a>
+            </div>
+
+            <a href="livro.html"> <figure class="translateArea" style="justify-content: end;" id="translateArea">
+                <figcaption class="translateBall braFlag" style="background-image: url(IMG/usa-flag.png);" id="translateBall" onclick="translateEng()"></figcaption>
+            </figure> </a>
+            
+
+            <div class="menuHamburguer" id="activeMobile" onclick="ativarMenu()">
+                <div class="lineBurger " id="line1"></div>
+                <div class="lineBurger " id="line2"></div>
+                <div class="lineBurger " id="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="navMobile none" id="navMobile">
+        <a href="livroEng.html" class="link"> <img src="IMG/casa.png" alt=""> Home</a>
+        <a href="sobreNosEng.html" class="link"> <img src="IMG/informacoes.png" alt=""> About us</a>
+        <a href="contatoEng.html" class="link"> <img src="IMG/fone-de-ouvido.png" alt=""> Contact</a>
+        <a href="loginEng.html" class="link"> <img src="IMG/login-alt.png" alt=""> Register</a>
+    </div>
+
+    <main>
+        <div class="ghost-nav" id="ghost-nav"></div>
+
+        <!--Font Awesome CDN-->
+    
+   
+
+     <section class="sliderBox">
+        <div class="slider">
+            <div class="list">
+                <div class="item" id="xadrez">
+                    <figure class="content">
+                    <h1>The Chess</h1>
+                    <span>Game</span>
+                    <p>Beremiz Samir's ingenious resolution to a problem that involves the history of the game of chess and its relationship with mathematics.</p>
+                    <a href="xadrezEng.html">See more</a>
+                    </figure>
+                </div>
+                <div class="item" id="diofante">
+                    <figure class="content">
+                        <h1>Life of</h1>
+                        <span>Diophantus</span>
+                        <p>Beremiz Samir's brilliant resolution to a problem that involves Diophantus' suffering throughout the rest of his life and his relationship with mathematics.</p>
+                        <a href="diofanteEng.html">See more</a>
+                        </figure>
+                </div>
+                <div class="item" id="divisoes">
+                    <figure class="content">
+                        <h1>The Three</h1>
+                        <span>Divisions</span>
+                        <p>The curious and ingenious calculation carried out by Beremiz Samir for the fair division of a payment between him and his partner.</p>
+                        <a href="tresDivisoesEng.html">See more</a>
+                        </figure>
+                </div>
+                <div class="item" id="raiz">
+                    <figure class="content">
+                        <h1>The Square</h1>
+                        <span>Root</span>
+                        <p>How Beremiz Samir beat one of the wise men by giving a clever and brilliant answer to a mathematical problem involving the number 2025.</p>
+                        <a href="raizQuadradaEng.html">See more</a>
+                        </figure>
+                </div>
+                <div class="item" id="autor">
+                    <figure class="content">
+                        <h1>Get to know the</h1>
+                        <span>Author</span>
+                        <p>Meet Malba Tahan, professor, educator, pedagogue, lecturer, mathematician and writer of Brazilian modernism, the writer of "The Man Who Calculated".</p>
+                        <a href="autorEng.html">See more</a>
+                        </figure>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </div>
+ </section>
+
+    <section class="bookStart">
+        <h1><img src="IMG/ornamento-laranja.png" alt="">Meeting the Man Who Calculated</h1>
+        <div class="bookStartBox">
+            <div class="bookStartContent"><p>
+                In the famous book "The Man Who Calculated", Malba Tahan recounts the incredible adventures of a genius Persian calculator, Beremiz Samir, whose fantastic solutions to apparently insoluble problems and mathematical feats became legendary in ancient Arabia, enchanting kings, poets, sheikhs and sages .
+            </p></div>
+            <div class="bookStartImage">
+                <img src="IMG/CapaFull.png" alt="">
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="aboutBook">
+        <h1><img src="IMG/ornamento-laranja.png" alt="">History of the book</h1>
+        <figure class="historyBox">
+            <div class="historyContent"><p>The narrative, within the landscape of the medieval Islamic world, deals with the mathematical adventures of the protagonist, who solves and explains, in an extraordinary way, various problems, puzzles and curiosities of mathematics. It also includes legends and picturesque stories, such as, for example, the legend of the origin of the game of chess and the story of the philosopher and mathematician Hypatia of Alexandria. Without being a textbook, it nevertheless has a strong moralistic tone. For this reason, the book is recommended as a paradidactic book in several countries, having been cited in Book Report Magazine and in several similar publications.</p></div>
+            <div class="historyImage"><img src="IMG/castle.png"class= "castle" alt=""></div>
+        </figure>
+        <figure class="historyBox bottom">
+            <div class="historyImage bottomImage"><img src="IMG/123.png" alt=""></div>
+
+            <div class="historyContent bottom"><p>Traveling from Samarra to Baghdad, Hank Tade-Maiá, the story's narrator, meets Beremiz Samir, a unique character who reveals himself to be a fabulous calculator from Persia. They decide to travel together to Baghdad and on the way Beremiz shows his extraordinary ability with calculations.
+                In Baghdad, Beremiz quickly becomes famous and much sought after by both common people and nobles, arousing the sympathy of some and the envy of others. He is employed as secretary to the Grand Vizier Ibrahim Maluf, while Tade-Maiá becomes scribe of this same minister. Beremiz also accepts the task of teaching mathematics to the daughter of the poet Iezid, meeting Telassim, his future wife. Even the caliph hears of Beremiz and grants him an audience. The caliph is enchanted by the calculating man's cunning, praising him.</p></div>
+        </figure>
+    </section>
+
+    <section class="bookRelevance">
+        <h1><img src="IMG/ornamento-laranja.png" alt="">Relevance</h1>
+        <figure class="cardArea">
+            <div class="card" id="orange">
+                <img src="IMG/livro-aberto-capa.png" alt="">
+                <h1>100º</h1>
+                <p>The Man Who Calculated: Adventures of a Unique Persian Calculator is a recreational mathematics book and a children's novel that narrates the adventures and mathematical feats of the Persian calculator Beremiz Samir in 13th century Baghdad. It was first published in <b>1938</b> and reached its <b>100th edition</b> in 2021.</p>
+            </div>
+            <div class="card">
+                <img src="IMG/vendendo.png" alt="">
+                <h1>2 Millions</h1>
+                <p>With great success, the book continues to enchant the public who read it to this day. The book is a great success, with more than <b>2 million</b> sales in <b>Brazil</b> alone, a number that could increase significantly if we consider the rest of the world.</p>
+            </div>
+            <div class="card" id="orange">
+                <img src="IMG/intercambio-de-idiomas.png" alt="">
+                <h1>Multilingual</h1>
+                <p>The book ended up becoming quite famous, especially in the school environment, being widely used by teachers. The work has already been translated into several languages, including Spanish, English, Italian, German, French, Dutch and Arabic.</p>
+            </div>
+            <div class="card">
+                <img src="IMG/primeiro-premio.png" alt="">
+                <h1>2 Awards</h1>
+                <p>In 1939, in the ABL literary competition, the book was awarded the Brazilian Academy Award in the "Book of short stories and novels" category. In 1972, the book was awarded by the Brazilian Academy of Letters. At the time its 75th edition was launched.</p>
+            </div>
+        </figure>
+        <figure class="famousOpinion">
+            <div class="famousImage"><img src="IMG/lobato.jpg" alt=""></div>
+            <div class="famousContent">
+                <h1>Monteiro Lobato</h1>
+                <p>With great success, the book has already been noticed by great writers, one of them being Monteiro Lobato, who described the work “The man who calculated” as “the best expression of the binomial science and imagination”.</p></div>
+        </figure>
+    </section>
+
+
+
+
+    </main>
+
+    <div class="back-start"><a href="#ghost-nav">Back to top</a></div>
+
+    <footer>
+        
+        <figure class="top">
+            <h1>Did you like our page?</h1>
+            <p>Also follow us on our social networks:</p>
+            <section>
+                <a href="https://www.instagram.com/livkitab/profilecard/?igsh=NzBhYjB6ejRpOWJ1"><img src="IMG/instagram.png" alt=""></a>
+            <img src="IMG/facebook.png" alt="">
+            <img src="IMG/youtube.png" alt="">
+        </section>
+        </figure>
+        <figure class="mid">
+            <div class="image"> <a href="livroEng.html"><img src="IMG/logokitbM.png" alt=""></a></div>
+            <div class="area"> <h1>The Man Who Calculated</h1>
+                <a href="livroEng.html">About the book</a>
+                <a href="autorEng.html">Author</a>
+                <a href="xadrezEng.html">The Chess Problem</a>
+                <a href="diofanteEng.html">The Diophantus Problem</a>
+                <a href="raizQuadradaEng.html">The square root of 2025</a>
+                <a href="tresDivisoesEng.html">The three Divisions</a>
+            </div>
+            <div class="area">
+                <h1>Kitab Bookstore</h1>
+                <a href="sobreNosEng.html">About us</a>
+                <a href="contatoEng.html">Contact</a>
+                <a href="loginEng.html">Register</a>
+            </div>
+        </figure>
+        <figure class="bottom"><p>©2024 Kitab Bookstore. All rights reserved.</p></figure>
+    </footer>
+
+
+</body>
+<script src="JS/livro.js"></script>
+<script src="JS/menu.js"></script>
+</html>
